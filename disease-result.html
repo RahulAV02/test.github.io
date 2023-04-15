@@ -1,0 +1,24 @@
+
+{% extends 'layout.html' %} {% block body %}
+
+<br><h1><center><b>Clinical Advices</b></center></h1>
+<div class="container py-2 mx-auto my-50 h-10 " style="margin: 3rem; background-color:rgb(207, 230, 242);">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+          <div class="card card-body" style="justify-content: center; background-color:rgb(71, 191, 210)">
+            <p class="text-center" style="color: rgb(244, 241, 241); font-size: 22px; background-color:rgb(46, 131, 209)">{{ prediction }}</p>
+            <br><br>
+            <h4 style="color: black;"><b>What is {{prediction}}?</b></h2>
+            <h6 style="color: rgb(248, 248, 248);">{{ wht }}</h4>
+            <br>
+            <h4 style="color: black;"><b>The Symptoms Are:</b></h2>
+            <h6 style="color: rgb(242, 241, 241);">{{ symtom }}</h4>
+            <br>
+            <h4 style="color: black;"><b>Medicinal Recommendation</b></h2>
+            <h6 style="color: rgb(238, 238, 238);">{{ medicine }}</h4>
+
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}
