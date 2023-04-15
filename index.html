@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+	
+				<div class="banner-top">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info text-center">
+								<h3 class="text-wh">SKIN DISESE CLASSIFICATION</h3>
+								<h4 class="text-wh mx-auto my-4"><b>Get informed decisions about your skin.</b></h4>
+								<br>
+								<h4 class="text-wh mx-auto my-4"><strong> Here are some questions we'll answer</strong></h4>
+								<p class="text-li mx-auto mt-2">
+									1. What type of skin is? <br>
+									2. how can i treat skin disease? <br>
+									3. Which disease do your skin have?<br>
+									4. How to cure the disease?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+</section>
+<!-- //banner -->
+
+<!-- core values -->
+
+<!-- //core values -->
+
+<!-- Products & Services -->
+<section class="blog py-5">
+	<div class="container py-md-5">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> Our Services</h3>
+		<div class="row blog-grids">
+			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+				<img src="{{ url_for('static', filename='images/derma.png') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('disease') }}">
+					<div class="blog-info">
+						<h4>Medicinal Recommendation</h4>
+						<p class="mt-2">To diagnose disease, system examine your skin</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<img src="{{ url_for('static', filename='images/images.jpeg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('disease') }}">
+					<div class="blog-info">
+						<h4>symptoms </h4>
+						<p class="mt-2">Diseases can be recognized by their symptoms</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+				<img src="{{ url_for('static', filename='images/im.jpeg') }}" class="img-fluid" alt="">
+
+				<!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+				<a href="{{ url_for('disease') }}">
+					<div class="blog-info">
+						<h4>Skin Disease</h4>
+						<p class="mt-2">Predicting the name and causes of skin disease and suggestions to cure it</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+</html>
+
+{% endblock %}
